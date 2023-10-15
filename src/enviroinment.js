@@ -1,5 +1,5 @@
 const env = {
-       apiurl: "https://webcde-backend.onrender.com"
+       apiurl: "https://backendcrm-66ya.onrender.com"
        //apiurl: "http://localhost:8000"
    
 }
