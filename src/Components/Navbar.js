@@ -38,9 +38,7 @@ export default function Navbar() {
         style={{ color: "white" }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" style={{ color: "white" }} href="/">
-            INDO Services
-          </a>
+          
           <button
             className="navbar-toggler"
             type="button"

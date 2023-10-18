@@ -139,12 +139,7 @@ let handleLogin = async ()=>{
           Forgot Password
         </Button>
       </Form>
-      <p className='Guidelines'>Guidelines :
-           1)Normal login applicable for Admin, Employee & NEmployee(who dont have anyrights)
-           2)Admin login aplicable for whos role is admin and after login admin can change role.
-           3)Normal login as a Admin & Employee can open leads and service request and can perform CRUD operation in leads and service request.
-           4)Normal login as a NEmployee can just see no. of leads and request.(not able to perform CRUD)
-           </p>
+      
       {toggle?<Spinner animation="border" variant="primary" />:<></>}
       {message?<div style={{"color":"red","textAlign":"center"}}>{message}</div>:<></>}
       </div>

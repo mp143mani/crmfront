@@ -9,7 +9,7 @@ import Login from "./Components/Login";
 import Register from "./Components/Register";
 import RegisterReq from "./Components/RegisterReq";
 import Request from "./Components/Request";
-import Welcome from "./Components/Welcome";
+
 import UpdateLead from "./Components/UpdateLead";
 import Req from "./Components/Req";
 import CreateReq from "./Components/CreateReq";
@@ -51,7 +51,7 @@ function App() {
           >
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<Welcome />} />
+                <Route path="/" element={<Login />} />
                 <Route path="/loginBefore" element={<Login />} />
                 <Route path="/Forgot" element={<Forgot />} />
                 <Route path="/ForgotReq" element={<ForgotReq />} />
