@@ -93,7 +93,9 @@ function Login() {
             </Button>
           </div>
         </Form>
-
+        <br /><br />
+    <h2>Admin : mani143tech@gmail.com(password:abcd1234)</h2> 
+    <h3>manager: manifun51@gmail.com(password:abcd1234)</h3> 
         {toggle ? <Spinner animation="border" variant="primary" /> : null}
         {message ? <div className="error-message">{message}</div> : null}
       </div>

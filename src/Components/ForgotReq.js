@@ -6,7 +6,7 @@ function ForgotReq() {
   let navigate = useNavigate();
 
   let handleLogin = async () => {
-    navigate("/loginBefore");
+    navigate("/login");
   };
 
   return (

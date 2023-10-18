@@ -21,7 +21,7 @@ export default function CreateLead() {
       email,
       status,
     });
-    // {fun.loadData}
+
     if (res.data.statusCode === 200) {
       navigate("/Leads");
     }

@@ -31,18 +31,19 @@ function Dashboard1() {
   useEffect(() => {
     loadData();
   }, []);
+
   return (
     <div id="content2">
       <Navbar />
       <div className="login-wrapper">
-        <h1>Admin control</h1>
+        <h1>Admin Control</h1>
       </div>
       <div>
         <div className="Content4">
-          <Table striped bordered hover ref={tableRef}>
+          <Table striped bordered hover ref={tableRef} className="custom-table">
             <thead>
               <tr>
-                <th>Sl No</th>
+                <th>Index No</th>
                 <th>Name</th>
                 <th>Mobile Number</th>
                 <th>Email</th>
@@ -61,7 +62,7 @@ function Dashboard1() {
                     <td>{e.role}</td>
                     <td>
                       <Button
-                        color="primary"
+                        variant="success" // Change the button variant
                         onClick={() => handleUpdate(e._id)}
                       >
                         <FaPen />
@@ -75,11 +76,10 @@ function Dashboard1() {
         </div>
         <div className="Content5">
           <Button variant="primary" onClick={() => loadData()}>
-            Refresh
+            Reload
           </Button>
         </div>
       </div>
-    
     </div>
   );
 }

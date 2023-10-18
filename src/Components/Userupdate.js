@@ -4,7 +4,6 @@ import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 import axios from "axios";
 import env from "../Backendurl";
 
-
 export default function UpdateAdmin() {
   const params = useParams();
   const navigate = useNavigate();
@@ -14,7 +13,7 @@ export default function UpdateAdmin() {
 
   useEffect(() => {
     getData();
-  },[]);
+  }, []);
 
   const getData = async () => {
     let res = await axios.get(`${env.apiurl}/users/edit-Admin/${params.id}`);
@@ -34,7 +33,7 @@ export default function UpdateAdmin() {
       email,
       role,
     });
-    // {fun.loadData}
+
     if (res.data.statusCode === 200) {
       navigate("/Dashboard1");
     }

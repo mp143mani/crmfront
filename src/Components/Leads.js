@@ -6,7 +6,6 @@ import env from "../Backendurl";
 import Button from "react-bootstrap/Button";
 import { FaTrashAlt, FaPlus, FaPen } from "react-icons/fa";
 import Navbar from "./Navbar";
-
 import "../CSS/Lead.css";
 
 function Leads() {
@@ -139,7 +138,6 @@ function Leads() {
           </Button>
         </div>
       </div>
-     
     </div>
   );
 }

@@ -21,7 +21,7 @@ export default function CreateReq() {
       email,
       status,
     });
-    // {fun.loadData}
+
     if (res.data.statusCode === 200) {
       navigate("/Req");
     }
