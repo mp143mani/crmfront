@@ -6,21 +6,21 @@ export default function Navbar1() {
   let navigate = useNavigate();
   const auth = localStorage.getItem('token');
   let handleBeforeLogin = async () => {
-    navigate("/loginBefore");
+    navigate("/login");
   };
   let handleRegister = async () => {
     navigate("/Register");
   };
   let handleBeforeLogout = async () => {
     localStorage.clear();
-    navigate("/loginBefore");
+    navigate("/login");
   };
 
   return (
     <div id="content">
       {/* Topbar */}
       <nav
-        className="navbar  navbar-expand-lg bg-dark fixed-top"
+        className="navbar  navbar-expand-lg bg-primary fixed-top"
         style={{ color: "white" }}
       >
         <div className="container-fluid">
@@ -44,12 +44,12 @@ export default function Navbar1() {
             {auth ?
             
             <button
-              className="btn btn-info mx-2"
+              className="btn btn-success mx-2"
               onClick={() => handleBeforeLogout()}
             >
               LOG Out
             </button>: <button
-              className="btn btn-primary mx-2"
+              className="btn btn-success mx-2"
               onClick={() => handleBeforeLogin()}
             >
               LOG IN
@@ -57,7 +57,7 @@ export default function Navbar1() {
           </div>
           <div>
             <button
-              className="btn btn-outline-success me-auto"
+              className="btn btn-success me-auto"
               onClick={() => handleRegister()}
             >
               Register

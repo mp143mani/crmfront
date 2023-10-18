@@ -8,7 +8,7 @@ import env from "../Backendurl";
 import { useNavigate } from "react-router-dom";
 import Spinner from "react-bootstrap/Spinner";
 import "../CSS/Login.css";
-import Navbar1 from "./Navbar1";
+import Navbar1 from "./NavbarA";
 import { EmployeeContext } from "../Context";
 
 function Login() {

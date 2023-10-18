@@ -5,7 +5,7 @@ import axios from 'axios'
 import env from "../Backendurl";
 import {useNavigate} from 'react-router-dom'
 import '../CSS/Login.css';
-import Navbar2 from './Navbar2';
+import Navbar2 from './NavbarB';
 
 function Forgot() {
   let [email,setEmail]=useState("")

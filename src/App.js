@@ -53,7 +53,7 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Login />} />
-                <Route path="/loginBefore" element={<Login />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/Forgot" element={<Forgot />} />
                 <Route path="/ForgotReq" element={<ForgotReq />} />
                 <Route path="/Register" element={<Register />} />

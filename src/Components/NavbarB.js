@@ -7,7 +7,7 @@ export default function Navbar2() {
     <div id="content">
       {/* Topbar */}
       <nav
-        className="navbar  navbar-expand-lg bg-dark fixed-top"
+        className="navbar  navbar-expand-lg bg-primary fixed-top"
         style={{ color: "white" }}
       >
         <div className="container-fluid">

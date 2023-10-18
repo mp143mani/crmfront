@@ -28,7 +28,7 @@ export default function Navbar() {
 
   let handleBeforeLogout = async () => {
     localStorage.clear();
-    navigate("/loginBefore");
+    navigate("/login");
   };
 
   return (
