@@ -1,36 +1,30 @@
-import React, {   useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
-import axios from 'axios'
-import env from '../enviroinment'
-import '../CSS/Login.css';
-
-
+import axios from "axios";
+import env from "../Backendurl";
+import "../CSS/Login.css";
 
 export default function CreateReq() {
-
   const navigate = useNavigate();
-  let [reqName,setReqName]=useState("")
-  let [mobileNumber,setMobileNumber]=useState("")
-  let [company,setCompany]=useState("")
-  let [email,setEmail]=useState("")
-  let [status,setStatus]=useState("")
+  let [reqName, setReqName] = useState("");
+  let [mobileNumber, setMobileNumber] = useState("");
+  let [company, setCompany] = useState("");
+  let [email, setEmail] = useState("");
+  let [status, setStatus] = useState("");
 
-    const handleSubmit = async ()=>{
-        let res = await axios.post(`${env.apiurl}/ReqCrm/ReqAdd`,{
-            reqName,
-            mobileNumber,
-            company,
-            email,
-            status
-      
-        })
-        // {fun.loadData}
-        if(res.data.statusCode===200)
-        {    
-            navigate("/Req");
-        }
-
+  const handleSubmit = async () => {
+    let res = await axios.post(`${env.apiurl}/ReqCrm/ReqAdd`, {
+      reqName,
+      mobileNumber,
+      company,
+      email,
+      status,
+    });
+    // {fun.loadData}
+    if (res.data.statusCode === 200) {
+      navigate("/Req");
+    }
   };
 
   return (
@@ -40,7 +34,7 @@ export default function CreateReq() {
         <FormGroup>
           <Label for="reqName">ReqName</Label>
           <Input
-            onChange={(e)=>setReqName(e.target.value)}
+            onChange={(e) => setReqName(e.target.value)}
             placeholder="Enter Req Name"
             type="text"
           />
@@ -48,7 +42,7 @@ export default function CreateReq() {
         <FormGroup>
           <Label for="mobileNumber">Mobile Number</Label>
           <Input
-            onChange={(e)=>setMobileNumber(e.target.value)}
+            onChange={(e) => setMobileNumber(e.target.value)}
             placeholder="Enter Mobile Number"
             type="mobileNumber"
           />
@@ -56,7 +50,7 @@ export default function CreateReq() {
         <FormGroup>
           <Label for="company">Company</Label>
           <Input
-            onChange={(e)=>setCompany(e.target.value)}
+            onChange={(e) => setCompany(e.target.value)}
             placeholder="Enter Company"
             type="company"
           />
@@ -64,7 +58,7 @@ export default function CreateReq() {
         <FormGroup>
           <Label for="email">email</Label>
           <Input
-            onChange={(e)=>setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter email"
             type="text"
           />
@@ -72,14 +66,13 @@ export default function CreateReq() {
         <FormGroup>
           <Label for="status">status</Label>
           <Input
-            onChange={(e)=>setStatus(e.target.value)}
+            onChange={(e) => setStatus(e.target.value)}
             placeholder="Enter status"
             type="text"
           />
         </FormGroup>
-        <Button onClick={()=>handleSubmit()}>Submit</Button>
+        <Button onClick={() => handleSubmit()}>Submit</Button>
       </Form>
- 
     </Container>
   );
 }

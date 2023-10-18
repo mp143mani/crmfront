@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
-import CreateLead from "./Components/CreateLead";
-import Dashboard from "./Components/Dashboard";
+
+import Creatingleads from "./Components/Creatingleads";
+import Dashboard from "./Components/UserDashboard";
 import Forgot from "./Components/Forgot";
 import ForgotReq from "./Components/ForgotReq";
 import Leads from "./Components/Leads";
@@ -10,16 +11,16 @@ import Register from "./Components/Register";
 import RegisterReq from "./Components/RegisterReq";
 import Request from "./Components/Request";
 
-import UpdateLead from "./Components/UpdateLead";
+import UpdateLead from "./Components/UpdateL";
 import Req from "./Components/Req";
 import CreateReq from "./Components/CreateReq";
-import UpdateReq from "./Components/UpdateReq";
+import UpdateReq from "./Components/UpdateRequst";
 import { useState } from "react";
 import { EmployeeContext } from "./Context";
 import axios from "axios";
-import env from "./enviroinment";
-import Dashboard1 from "./Components/Dashboard1";
-import UpdateAdmin from "./Components/UpdateAdmin";
+import env from "./Backendurl";
+import Dashboard1 from "./Components/Admindashboard";
+import UpdateAdmin from "./Components/Userupdate";
 
 function App() {
   const [length, setLength] = useState();
@@ -61,7 +62,7 @@ function App() {
                 <Route path="/Dashboard1" element={<Dashboard1 />} />
                 <Route path="/Leads" element={<Leads />} />
                 <Route path="/Request" element={<Request />} />
-                <Route path="/CreateLead" element={<CreateLead />} />
+                <Route path="/Creatingleads" element={<Creatingleads />} />
                 <Route path="/UpdateLead/:id" element={<UpdateLead />} />
                 <Route path="/Req" element={<Req />} />
                 <Route path="/CreateReq" element={<CreateReq />} />

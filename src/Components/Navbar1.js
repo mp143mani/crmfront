@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/Welcome.css";
+
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar1() {

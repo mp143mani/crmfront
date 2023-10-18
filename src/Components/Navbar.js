@@ -1,7 +1,7 @@
 import React from "react";
-import "../CSS/Welcome.css";
+
 import axios from "axios";
-import env from "../enviroinment";
+import env from "../Backendurl";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -38,7 +38,6 @@ export default function Navbar() {
         style={{ color: "white" }}
       >
         <div className="container-fluid">
-          
           <button
             className="navbar-toggler"
             type="button"

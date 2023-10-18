@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios'
-import env from '../enviroinment'
+import env from "../Backendurl";
 import {useNavigate} from 'react-router-dom'
 import '../CSS/Login.css';
 import Navbar2 from './Navbar2';

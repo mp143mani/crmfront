@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import "../CSS/Welcome.css";
+
 // import axios from 'axios'
-//import env from '../enviroinment'
+// import env from '../Backendurl'
 
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+
 import { EmployeeContext } from "../Context";
 
 export default function Dashboard() {
